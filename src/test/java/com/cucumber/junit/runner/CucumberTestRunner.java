@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         monochrome = true,
         tags = "@smoke",
         glue = "com.cucumber.junit",
-        features = "classpath:com/cucumber/junit/features"
-)
+        features = "classpath:com/cucumber/junit/features")
+
 public class CucumberTestRunner {
 }
