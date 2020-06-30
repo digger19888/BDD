@@ -1,4 +1,4 @@
-package com.cucumber.junit.runner.hooks;
+package com.cucumber.junit.hooks;
 
 import com.cucumber.junit.driver.DriverManager;
 import io.cucumber.java.After;
@@ -12,7 +12,7 @@ public class ScreenshotHook {
 
     @After
     public void takeScreenshot(Scenario scenario) {
-        scenario. (DriverManager.getDriver().getCurrentUrl());
+//        scenario. (DriverManager.getDriver().getCurrentUrl());
         byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
         scenario.attach(screenshot, PNG_FILE_EXTENSION, scenario.getName());
 

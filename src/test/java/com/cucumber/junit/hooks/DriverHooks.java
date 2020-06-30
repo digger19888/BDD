@@ -1,4 +1,4 @@
-package com.cucumber.junit.runner.hooks;
+package com.cucumber.junit.hooks;
 
 import com.cucumber.junit.driver.DriverManager;
 import io.cucumber.java.After;
